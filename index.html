@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ẩm Thực 3 Miền – Việt Nam</title>
+    <style>
+        body { margin: 0; font-family: "Poppins", sans-serif; background: #F8D7E8; color: #444; }
+.card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;   /* giữ ảnh vuông */
+    object-fit: cover;     /* cắt ảnh để không bị méo */
+    border-radius: 12px;
+}
+        /* HEADER */
+        header {
+            text-align: center;
+            padding: 120px 20px;
+            background: linear-gradient(135deg, #F8D7E8, #E4C6F5, #FFFFFF);
+            color: #7b3fa1;
+        }
+        header h1 { font-size: 48px; margin: 0; }
+        header p { margin-top: 10px; font-size: 20px; }
+
+        /* NAV */
+        nav { text-align: center; padding: 15px; background: #E4C6F5; position: sticky; top: 0; }
+        nav a {
+            margin: 0 15px;
+            color: #7b3fa1;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        nav a:hover { text-decoration: underline; }
+        /* 📱 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-banner {
+        height: 220px;
+    }
+
+    .hero-banner h1 {
+        font-size: 28px;       /* chữ nhỏ lại trên điện thoại */
+        bottom: 15px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-banner {
+        height: 180px;
+    }
+
+    .hero-banner h1 {
+        font-size: 22px;       /* điện thoại nhỏ hơn */
+        bottom: 10px;
+    }
+}
+
+        /* BUTTON */
+        .btn-glow {
+            display: inline-block;
+            padding: 14px 28px;
+            margin-top: 20px;
+            background: #FFB6C8;
+            border-radius: 40px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 0 15px #ff9ad7;
+            transition: 0.3s;
+        }
+        .btn-glow:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 25px #e592ff;
+        }
+
+        .section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px 20px;
+            background: #F2E6FF;
+            margin-top: 40px;
+            border-radius: 20px;
+        }
+
+        /* GRID */
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 0 12px rgba(200, 150, 255, 0.3);
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 150, 220, 0.5);
+        }
+        .card img { width: 100%; border-radius: 12px; }
+
+        /* FORM */
+    .contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px 14px;              /* giảm chiều cao */
+    margin-bottom: 20px;            /* thu nhỏ khoảng cách */
+    border-radius: 12px;            /* bo nhẹ */
+    border: 1px solid #D8B7F5;      /* viền mảnh hơn */
+    font-size: 15px;                /* chữ nhỏ gọn */
+    background: #fff;
+    box-sizing: border-box;
+}
+        textarea { height: 120px; }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+            background: #E4C6F5;
+        }
+        .hero-banner {
+    padding: 140px 20px;
+    
+    text-align: center;
+    background-image: url("https://www.rmit.edu.vn/content/dam/rmit/vn/en/assets-for-production/images/news/asian-dishes-1440x450.jpg"); /* Ảnh đẹp dạng banner */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+}
+.hero-banner h1 {
+    margin-top: 250px; /* tăng số lên để chữ xuống */
+}
+
+
+    </style>
+    
+</head>
+<body>
+
+<header class="hero-banner">
+<h1>
+  ẨM THỰC 3 MIỀN VIỆT NAM
+  <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png"
+       style="width:60px; vertical-align:middle; margin-left:10px;">
+</h1>
+    <p>Hương vị Bắc – Trung – Nam trong từng món ăn</p>
+    <a href="#mien-bac" class="btn-glow">Khám phá ngay</a>
+</header>
+
+<nav>
+    <a href="#gioi-thieu">Giới thiệu</a>
+    <a href="#nghien-cuu">Sự khác nhau</a>
+    <a href="#mien-bac">Miền Bắc</a>
+    <a href="#mien-trung">Miền Trung</a>
+    <a href="#mien-nam">Miền Nam</a>
+    <a href="#bieu-do">Biểu đồ</a>
+    <a href="#lien-he">Liên hệ</a>
+</nav>
+
+<section id="gioi-thieu" class="section" style="display:flex; gap:30px; align-items:center; flex-wrap:wrap;">
+    <div style="flex:1; min-width:280px;">
+        <h2 style="color:#7b3fa1; font-size:32px; text-align:center; letter-spacing:1px;">Giới thiệu Ẩm Thực Ba Miền Việt Nam</h2>
+        <p style="font-size:18px; line-height:1.8; text-align:justify; color:#6b4c7a; animation:fadeIn 1.2s ease;">
+            Ẩm thực Việt Nam là một bức tranh rực rỡ, nơi từng miền đất đều mang trong mình một phong vị riêng đầy cuốn hút. 
+            Miền Bắc nổi bật với sự thanh tao, nhẹ nhàng trong từng gia vị; miền Trung gây ấn tượng bởi vị đậm đà, cay nồng 
+            và màu sắc rực rỡ; trong khi miền Nam lại mang hơi thở phóng khoáng, ngọt béo và tràn đầy sức sống. 
+            <br><br>
+            Mỗi món ăn không chỉ là hương vị, mà còn là dấu ấn văn hoá, là câu chuyện của con người và vùng đất đã tạo nên nó. 
+            Dưới đây là những món ăn đặc trưng nhất, đại diện cho linh hồn và bản sắc của ẩm thực ba miền Việt Nam.
+        </p>
+    </div>
+
+    <div style="flex:1; min-width:280px; text-align:center; animation:floatUp 1.2s ease;">
+        <img src="https://thoidai.com.vn/stores/news_dataimages/anh.van/042022/28/06/3639_1601262245503-63737441452448.jpg?rt=20220428063646" 
+             style="width:100%; border-radius:18px; box-shadow:0 0 18px rgba(200,150,255,0.4);" />
+    </div>
+</section>
+
+<section id="nghien-cuu" class="section">
+    <h2 style="text-align:center; color:#7b3fa1; font-size:30px;">Sự khác nhau</h2>
+
+    <!-- PHẦN 1: SỰ KHÁC NHAU KHẨU VỊ 3 MIỀN -->
+    <div style="margin-top:35px; padding:25px; background:#F9E8FF; border-radius:18px; box-shadow:0 0 15px rgba(200,150,255,0.3);">
+        <h3 style="color:#9b5bc4; font-size:24px; margin-bottom:10px;">1. Khẩu vị 3 miền</h3>
+        <div style="display:flex; flex-wrap:wrap; gap:20px; align-items:center;">
+            <div style="flex:1; min-width:280px; font-size:18px; line-height:1.8; color:#6b4c7a;">
+                • <b>Miền Bắc</b>: Vị thanh nhẹ, ưu sự hài hòa và tinh tế.<br>
+                • <b>Miền Trung</b>: Đậm đà, cay nồng, nổi bật sự quyết liệt trong khẩu vị.<br>
+                • <b>Miền Nam</b>: Ngọt – béo – phóng khoáng, nhiều topping và rau.
+            </div>
+            <img src="https://nhahangphungthanh.vn/wp-content/uploads/2024/07/bg_homepage.jpg" style="flex:1; min-width:260px; border-radius:15px; width:100%; box-shadow:0 0 15px rgba(150,100,255,0.3);">
+        </div>
+    </div>
+
+    <!-- PHẦN 2: ẢNH HƯỞNG KHÍ HẬU – VĂN HÓA -->
+    <div style="margin-top:35px; padding:25px; background:#FFE6F2; border-radius:18px; box-shadow:0 0 15px rgba(255,150,220,0.3);">
+        <h3 style="color:#d154b8; font-size:24px; margin-bottom:10px;">2. Ảnh hưởng khí hậu – văn hóa</h3>
+        <div style="display:flex; flex-wrap:wrap; gap:20px; align-items:center;">
+            <div style="flex:1; min-width:280px; font-size:18px; line-height:1.8; color:#6b4c7a;">
+                • <b>Miền Bắc</b>: Khí hậu lạnh → món ăn ấm nóng, vị thanh để dễ ăn quanh năm.<br>
+                • <b>Miền Trung</b>: Khí hậu khắc nghiệt → dùng cay, mặn để bảo quản tốt hơn.<br>
+                • <b>Miền Nam</b>: Nóng, trù phú → món ăn nhiều rau sống, trái cây, vị ngọt đặc trưng.
+            </div>            <img src="https://www.weatherforecast.uk.com/wp-content/uploads/2025/05/khi-hau-viet-nam2-1.jpg" style="flex:1; min-width:260px; border-radius:15px; width:100%; box-shadow:0 0 15px rgba(255,150,200,0.4);">
+        </div>
+    </div>
+
+    <!-- PHẦN 3: CÁCH CHẾ BIẾN ĐẶC TRƯNG 3 MIỀN -->
+    <div style="margin-top:35px; padding:25px; background:#EDE4FF; border-radius:18px; box-shadow:0 0 15px rgba(180,150,255,0.3);">
+        <h3 style="color:#7b4fcc; font-size:24px; margin-bottom:10px;">3. Cách chế biến đặc trưng</h3>
+        <div style="display:flex; flex-wrap:wrap; gap:20px; align-items:center;">
+            <div style="flex:1; min-width:280px; font-size:18px; line-height:1.8; color:#6b4c7a;">
+                • <b>Miền Bắc</b>: Ưa chuộng món luộc, hấp; tiết chế gia vị mạnh.<br>
+                • <b>Miền Trung</b>: Nhiều ớt, mắm, màu sắc đậm; kỹ thuật chế biến cầu kỳ.<br>
+                • <b>Miền Nam</b>: Chiên – xào, dùng nước cốt dừa, nhiều gia vị tạo độ ngọt.
+            </div>
+            <img src="https://cdn.zsoft.solutions/poseidon-web/app/media/Kham-pha-am-thuc/07.2024/bi-mat-gia-vi-am-thuc-3-mien-thumb.jpg" style="flex:1; min-width:260px; border-radius:15px; width:100%; box-shadow:0 0 15px rgba(200,150,255,0.4);">
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2 id="mien-bac">Ẩm Thực Miền Bắc</h2>
+    <div class="food-grid">
+        <!-- 10 món miền Bắc -->
+        <div class="card"><img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2024/12/21/1438849/Pho-Bo.jpg"><h4>Phở Hà Nội</h4></div>
+        <div class="card"><img src="https://cooponline.vn/tin-tuc/wp-content/uploads/2025/10/hoc-cach-lam-bun-cha-mien-bac-chuan-ha-noi-tai-nha.png"><h4>Bún Chả</h4></div>
+        <div class="card"><img src="https://i0.wp.com/mycogroup.com.vn/wp-content/uploads/2023/05/banh-cuon-ha-noi.jpg?resize=1020%2C574&ssl=1"><h4>Bánh Cuốn</h4></div>
+        <div class="card"><img src="https://cdn.xanhsm.com/2024/12/dfdc574a-banh-tom-ho-tay-18.jpg"><h4>Bánh Tôm Hồ Tây</h4></div>
+        <div class="card"><img src="https://opera.thanglonghanoihotels.com/wp-content/uploads/2025/01/bun-thang-0cO900-1024x767.jpg"><h4>Bún Thang</h4></div>
+        <div class="card"><img src="https://www.cet.edu.vn/wp-content/uploads/2018/04/bun-oc-ha-noi.jpg"><h4>Bún Ốc</h4></div>
+        <div class="card"><img src="https://www.cet.edu.vn/wp-content/uploads/2018/08/cha-ca-la-vong.jpg"><h4>Chả Cá Lã Vọng</h4></div>
+        <div class="card"><img src="https://i-giadinh.vnecdn.net/2024/11/02/Bc7Thnhphm17-1730530097-3638-1730530219.jpg"><h4>Bánh Đúc Nóng</h4></div>
+      
+    </div>
+</section>
+
+<section class="section">
+    <h2 id="mien-trung">Ẩm Thực Miền Trung</h2>
+    <div class="food-grid">
+        <!-- 10 món miền Trung -->
+        <div class="card"><img src="https://i.ytimg.com/vi/CSI9ildGX9s/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCxhRIyoYY7k9ZuxY0YOC9jNFLapg"><h4>Bún Bò Huế</h4></div>
+        <div class="card"><img src="https://i.ytimg.com/vi/TTWTwhV9Zx0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAhmu_K6V9ul_4tCTdpV8_DCd2rHA"><h4>Mì Quảng</h4></div>
+        <div class="card"><img src="https://vietfood.org.vn/wp-content/uploads/2021/05/BanhBeo2.jpg"><h4>Bánh Bèo</h4></div>
+        <div class="card"><img src="https://biolomix.vn/wp-content/uploads/2025/04/020405.jpg"><h4>Bánh Nậm</h4></div>
+        <div class="card"><img src="https://aeonmall-review-rikkei.cdn.vccloud.vn/website/21/articles/June2025/7FMXRqp4tLnVWXZuLizL.jpg"><h4>Bánh Lọc</h4></div>
+        <div class="card"><img src="https://i-giadinh.vnecdn.net/2023/03/13/Buoc-7-Thanh-pham-1-7-9577-1678700377.jpg"><h4>Cao Lầu</h4></div>
+        <div class="card"><img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2023/2/8/1145783/2-2.jpg"><h4>Bánh Canh</h4></div>
+        <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ7Nt3ELo2062oFiiCscbezFbrp-TjuTJtFw&s"><h4>Bánh Tráng Cuốn Thịt Heo</h4></div>
+    
+    </div>
+</section>
+
+<section class="section">
+    <h2 id="mien-nam">Ẩm Thực Miền Nam</h2>
+    <div class="food-grid">
+        <!-- 10 món miền Nam -->
+        <div class="card"><img src="https://i-giadinh.vnecdn.net/2023/05/15/Bc8Thnhphm18-1684125639-9811-1684125654.jpg"><h4>Hủ Tiếu</h4></div>
+        <div class="card"><img src="https://i-giadinh.vnecdn.net/2023/09/19/Buoc-10-Thanh-pham-1-1-5225-1695107554.jpg"><h4>Bánh Xèo</h4></div>
+        <div class="card"><img src="https://chefjob.vn/wp-content/uploads/2018/08/banh-mi-thit-sai-gon.jpg"><h4>Bánh Mì Sài Gòn</h4></div>
+        <div class="card"><img src="https://cdn.tgdd.vn/2021/09/CookRecipe/Avatar/bun-mam-thumbnail.jpg"><h4>Bún Mắm</h4></div>
+        <div class="card"><img src="https://sakos.vn/wp-content/uploads/2024/09/bia.jpg"><h4>Cơm Tấm</h4></div>
+        <div class="card"><img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2024/5/1/1334483/Ghe-69.jpg"><h4>Bánh Canh Ghẹ</h4></div>
+        <div class="card"><img src="https://i-giadinh.vnecdn.net/2022/09/30/-1940-1664522303.jpg"><h4>Bò Kho</h4></div>
+        <div class="card"><img src="https://beptruong.edu.vn/wp-content/uploads/2024/10/cach-nau-xoi-man.jpg"><h4>Xôi Mặn</h4></div>
+    
+</section>
+
+<section id="bieu-do" class="section">
+    <h2>Biểu Đồ Hương Vị 3 Miền</h2>
+    <img src="https://media.urbanistnetwork.com/urbanistvietnam/articleimages/2025/02/20/giavi/giavi222b.jpg" style="width:100%; border-radius:15px;">
+</section>
+
+<section id="lien-he" class="section">
+    <h2>Liên hệ</h2>
+    <form class="contact-form">
+        <input type="text" placeholder="Họ và tên" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Ý kiến của bạn" required></textarea>
+        <button class="btn-glow">Gửi</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 – Ẩm thực 3 miền Việt Nam
+</footer>
+
+</body>
+</html>
